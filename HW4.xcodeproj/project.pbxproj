@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3743ECA52C5ABA7100F5C1AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743ECA42C5ABA7100F5C1AD /* CardView.swift */; };
+		3743ECA82C5D2E3C00F5C1AD /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743ECA72C5D2E3C00F5C1AD /* OfferModel.swift */; };
+		3743ECAA2C5D351600F5C1AD /* FlatCostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743ECA92C5D351600F5C1AD /* FlatCostView.swift */; };
 		37833B342C5A769D00FC2B14 /* HW4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37833B332C5A769D00FC2B14 /* HW4App.swift */; };
 		37833B362C5A769D00FC2B14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37833B352C5A769D00FC2B14 /* ContentView.swift */; };
 		37833B382C5A769F00FC2B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37833B372C5A769F00FC2B14 /* Assets.xcassets */; };
 		37833B3B2C5A769F00FC2B14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37833B3A2C5A769F00FC2B14 /* Preview Assets.xcassets */; };
+		37833B432C5A79DF00FC2B14 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37833B422C5A79DF00FC2B14 /* Gilroy-ExtraBold.otf */; };
+		37833B452C5A79E400FC2B14 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37833B442C5A79E400FC2B14 /* Gilroy-Light.otf */; };
+		37833B492C5A860C00FC2B14 /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37833B482C5A860C00FC2B14 /* OfferView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3743ECA42C5ABA7100F5C1AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3743ECA72C5D2E3C00F5C1AD /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
+		3743ECA92C5D351600F5C1AD /* FlatCostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatCostView.swift; sourceTree = "<group>"; };
 		37833B302C5A769D00FC2B14 /* HW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37833B332C5A769D00FC2B14 /* HW4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW4App.swift; sourceTree = "<group>"; };
 		37833B352C5A769D00FC2B14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37833B372C5A769F00FC2B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37833B3A2C5A769F00FC2B14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37833B422C5A79DF00FC2B14 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		37833B442C5A79E400FC2B14 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
+		37833B462C5A7A0200FC2B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		37833B482C5A860C00FC2B14 /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3743ECA32C5ABA6200F5C1AD /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				3743ECA42C5ABA7100F5C1AD /* CardView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		3743ECA62C5D2E1D00F5C1AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3743ECA72C5D2E3C00F5C1AD /* OfferModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		37833B272C5A769D00FC2B14 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +80,16 @@
 		37833B322C5A769D00FC2B14 /* HW4 */ = {
 			isa = PBXGroup;
 			children = (
+				3743ECA62C5D2E1D00F5C1AD /* Model */,
+				3743ECA32C5ABA6200F5C1AD /* Card */,
+				37833B472C5A85FA00FC2B14 /* Offers */,
+				37833B412C5A79CC00FC2B14 /* Fonts */,
 				37833B332C5A769D00FC2B14 /* HW4App.swift */,
 				37833B352C5A769D00FC2B14 /* ContentView.swift */,
+				37833B462C5A7A0200FC2B14 /* Info.plist */,
 				37833B372C5A769F00FC2B14 /* Assets.xcassets */,
 				37833B392C5A769F00FC2B14 /* Preview Content */,
+				3743ECA92C5D351600F5C1AD /* FlatCostView.swift */,
 			);
 			path = HW4;
 			sourceTree = "<group>";
@@ -65,6 +100,23 @@
 				37833B3A2C5A769F00FC2B14 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37833B412C5A79CC00FC2B14 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				37833B442C5A79E400FC2B14 /* Gilroy-Light.otf */,
+				37833B422C5A79DF00FC2B14 /* Gilroy-ExtraBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		37833B472C5A85FA00FC2B14 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				37833B482C5A860C00FC2B14 /* OfferView.swift */,
+			);
+			path = Offers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +179,8 @@
 			files = (
 				37833B3B2C5A769F00FC2B14 /* Preview Assets.xcassets in Resources */,
 				37833B382C5A769F00FC2B14 /* Assets.xcassets in Resources */,
+				37833B452C5A79E400FC2B14 /* Gilroy-Light.otf in Resources */,
+				37833B432C5A79DF00FC2B14 /* Gilroy-ExtraBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37833B362C5A769D00FC2B14 /* ContentView.swift in Sources */,
+				37833B492C5A860C00FC2B14 /* OfferView.swift in Sources */,
+				3743ECA82C5D2E3C00F5C1AD /* OfferModel.swift in Sources */,
+				3743ECA52C5ABA7100F5C1AD /* CardView.swift in Sources */,
+				3743ECAA2C5D351600F5C1AD /* FlatCostView.swift in Sources */,
 				37833B342C5A769D00FC2B14 /* HW4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +333,7 @@
 				DEVELOPMENT_TEAM = T3Y57V3BSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HW4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +363,7 @@
 				DEVELOPMENT_TEAM = T3Y57V3BSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HW4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
