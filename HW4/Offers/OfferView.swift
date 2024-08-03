@@ -25,39 +25,13 @@ struct OfferView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     .clipped()
             }
-            VStack(alignment: .leading) {
-                VStack(spacing: 10) {
-                    Text(offer.name)
-                        .font(.custom("Gilroy-ExtraBold", size: 22))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    Text("от \(offer.cost) ₽")
-                        .font(.custom("Gilroy-ExtraBold", size: 22))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    Text(offer.district)
-                        .font(.custom("Gilroy-Light", size: 16))
-                        .foregroundStyle(.appLightGray)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                HStack(alignment: .top, spacing: 4) {
-                    FlatCostView(
-                        text: "Студии",
-                        cost: offer.studioCost
-                    )
-                    FlatCostView(
-                        text: "1-комн.",
-                        cost: offer.oneFlatCost
-                    )
-                    FlatCostView(
-                        text: "2-комн.",
-                        cost: offer.twoFlatCost
-                    )
-                }
-            }
-            .padding(.horizontal)
+            InfoStackView(offer: offer)
+            .padding(.horizontal, 20)
             .padding(.bottom, 26)
         }
         .frame(maxWidth: .infinity)
-        .padding(.horizontal)
+        .background(.white)
+        .clipShape(RoundedRectangle(cornerRadius: 15))
     }
 }
 
