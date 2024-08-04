@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CardView: View {
+    let card : OfferModel
     private let rows = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -25,7 +26,7 @@ struct CardView: View {
             .zIndex(1)
             ScrollView(.vertical) {
                 VStack {
-                    Image(.city0)
+                    Image(card.pic)
                         .resizable()
                         .scaledToFill()
                         .frame(
@@ -34,34 +35,7 @@ struct CardView: View {
                         )
                         .clipped()
                     VStack(alignment: .leading, spacing: 30) {
-                        VStack(alignment: .leading, spacing: 20) {
-                            VStack(spacing: 10) {
-                                Text("SIMPLY CLEVER")
-                                    .font(.custom("Gilroy-ExtraBold", size: 22))
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                Text("от 1 000 000 ₽")
-                                    .font(.custom("Gilroy-ExtraBold", size: 22))
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                Text("13 DISTRICT")
-                                    .font(.custom("Gilroy-Light", size: 16))
-                                    .foregroundStyle(.appLightGray)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                            }
-                            HStack(alignment: .top, spacing: 4) {
-                                FlatCostView(
-                                    text: "Студии",
-                                    cost: "offer.studioCost"
-                                )
-                                FlatCostView(
-                                    text: "1-комн.",
-                                    cost: "offer.oneFlatCost"
-                                )
-                                FlatCostView(
-                                    text: "2-комн.",
-                                    cost: "offer.twoFlatCost"
-                                )
-                            }
-                        }
+                        InfoStackView(offer: card)
                         VStack(alignment: .leading, spacing: 15) {
                             Text("Отделка квартир")
                                 .font(.custom("Gilroy-ExtraBold", size: 25))
@@ -88,9 +62,9 @@ struct CardView: View {
     }
 }
 
-#Preview {
-    CardView()
-}
+//#Preview {
+//    CardView()
+//}
 
 struct FlatPhotoView : View {
     let imageName : String

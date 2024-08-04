@@ -7,9 +7,11 @@ struct InfoStackView: View {
             VStack(spacing: 10) {
                 Text(offer.name)
                     .font(.custom("Gilroy-ExtraBold", size: 22))
+                    .tint(.black)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Text("от \(offer.cost) ₽")
                     .font(.custom("Gilroy-ExtraBold", size: 22))
+                    .tint(.black)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Text(offer.district)
                     .font(.custom("Gilroy-Light", size: 16))

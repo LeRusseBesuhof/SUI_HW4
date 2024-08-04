@@ -16,19 +16,25 @@ struct ContentView: View {
             .background(.appBackground)
             .zIndex(1)
             
-            ScrollView(.vertical) {
-                LazyVGrid(columns: rows, spacing: 10) {
-                    ForEach(offerData) {
-                        OfferView(offer: $0)
+            NavigationView {
+                ScrollView(.vertical) {
+                    LazyVGrid(columns: rows, spacing: 10) {
+                        ForEach(offerData) { offer in
+                            NavigationLink {
+                                CardView(card: offer)
+                            } label: {
+                                OfferView(offer: offer)
+                            }
+                        }
                     }
+                    .padding(.top, 40)
+                    
                 }
-                .padding(.top, 40)
-                
+                .padding(.horizontal, 18)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(.appBackground)
+                .scrollIndicators(.hidden)
             }
-            .padding(.horizontal, 18)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(.appBackground)
-            .scrollIndicators(.hidden)
         }
         .frame(maxWidth: .infinity)
         .background(.appBackground)
